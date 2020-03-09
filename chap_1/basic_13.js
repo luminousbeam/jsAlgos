@@ -17,8 +17,6 @@ const printNumsES6 = (num) => {
   range.forEach(number => console.log(number))
 }
 
-exports.printNumsES6 = printNumsES6
-
 // printNums(255)
 
 // Print Ints and Sum 0-255
@@ -41,8 +39,6 @@ const printNumsAndSumES6 = num => {
   }, 0)
 }
 
-exports.printNumsAndSumES6 = printNumsAndSumES6
-
 // printNumsAndSum(255)
 
 // Print Max of Array
@@ -64,8 +60,6 @@ const printMaxOfArrayES6 = (arr) => {
   console.log(Math.max(...arr))
 }
 
-exports.printMaxOfArrayES6 = printMaxOfArrayES6
-
 //printMaxOfArray([1,2,3,4,5])
 
 // Return Odds Array 1-255
@@ -85,8 +79,6 @@ const returnOddsArrayES6 = num => {
   const arr = range(1, num)
   console.log(arr.filter(n => n%2 !== 0)) // zero returns falsey
 }
-
-exports.returnOddsArrayES6 = returnOddsArrayES6
 
 // returnOddsArray(255)
 
@@ -111,8 +103,6 @@ const returnArrayCountGreaterThanYES6 = (arr, y) => {
   const result = arr.filter(n => n > y).length
   console.log(result)
 }
-
-exports.returnArrayCountGreaterThanYES6 = returnArrayCountGreaterThanYES6
 
 //returnArrayCountGreaterThanY([1,2,3,4,5,6,7,8,9,10], 5)
 
@@ -149,7 +139,6 @@ const maxMinAvgES6 = arr => {
   console.log(max, min, avg)
 }
 
-exports.maxMinAvgES6 = maxMinAvgES6
 //maxMinAvg([1,2,3,4,5,6,7,8,9,10])
 
 // Swap String for Array Negative Values
@@ -171,7 +160,6 @@ const swapES6 = (arr, newVal) => {
   console.log(result)
 }
 
-exports.swapES6 = swapES6
 //swap([1,2,3,-4,-5,-6,7,8,9,-10], 'Dojo')
 
 // Print Odds 1-255
@@ -190,7 +178,6 @@ const printOddsES6 = num => {
   odds.forEach(n => console.log(n))
 }
 
-exports.printOddsES6 = printOddsES6
 // printOdds(255)
 
 // Print Array Values
@@ -225,7 +212,6 @@ const printAvgOfArrayES6 = arr => {
   console.log(result)
 }
 
-exports.printAvgOfArrayES6 = printAvgOfArrayES6
 // printAvgOfArray([2,2,2,2,2])
 
 // Square Array Values
@@ -237,7 +223,6 @@ function squareArrayVals(arr){
 
 const squareArrayValsES6 = arr => arr.map(i => i*=i)
 
-exports.squareArrayValsES6 = squareArrayValsES6
 // squareArrayVals([2,3,4,5])
 
 // Zero Out Array Negative Numbers
@@ -265,5 +250,4 @@ const shiftLeftES6 = arr => {
   console.log(arrCopy)
 }
 
-exports.shiftLeftES6 = shiftLeftES6
 // shiftLeft([1,2,3,4,5])
